@@ -1,24 +1,19 @@
-package algorithmProgrammers;
+package algorithmProgrammers.level1;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution_1 {
-	public static void main(String[] args) {
-		Solution_1 sol = new Solution_1();
-		System.out.println(sol.solution(10, new int[] {3, 9, 10}, new int[] {3, 8, 9}));
-	}
-	
-    public int solution(int n, int[] lost, int[] reserve) {
-		int okMember = n - lost.length; // @1
+public class Solution42862 {
+	public int solution(int n, int[] lost, int[] reserve) {
+		int okMember = n - lost.length;
 		
-		List<Integer> lostList = new ArrayList<Integer>(); // @2
+		List<Integer> lostList = new ArrayList<Integer>();
 		for (int i : lost) lostList.add(i);
 
-		List<Integer> reserveList = new ArrayList<Integer>(); // @3
+		List<Integer> reserveList = new ArrayList<Integer>();
 		for (int i : reserve) reserveList.add(i);
 		
-        for(int i=0; i<lostList.size(); i++) { // @4
+        for(int i=0; i<lostList.size(); i++) {
 			for(int j=0; j<reserveList.size(); j++) {
 				if(lostList.get(i) == reserveList.get(j)) {
 					lostList.remove(i);
@@ -30,7 +25,7 @@ class Solution_1 {
 			}
 		}
     
-		for (int i = 0; i < lostList.size(); i++) { // @5
+		for (int i = 0; i < lostList.size(); i++) {
 			int lostNum = lostList.get(i);
 			for (int j = 0; j < reserveList.size(); j++) {
 				int reserveNum = reserveList.get(j);
