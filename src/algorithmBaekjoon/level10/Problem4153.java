@@ -1,3 +1,7 @@
+/***
+ * ì§ê°ì‚¼ê°í˜• 
+ * https://www.acmicpc.net/problem/4153
+ */
 package algorithmBaekjoon.level10;
 
 import java.io.BufferedReader;
@@ -6,7 +10,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Problem4153 { //Á÷°¢»ï°¢Çü
+public class Problem4153 { 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
@@ -14,7 +18,7 @@ public class Problem4153 { //Á÷°¢»ï°¢Çü
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			int lengths[] = {Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())};
 			
-			if(lengths[0] == 0 && lengths[1] == 0 && lengths[2] == 0) break; //¹İº¹ ÁßÁö
+			if(lengths[0] == 0 && lengths[1] == 0 && lengths[2] == 0) break; //ï¿½İºï¿½ ï¿½ï¿½ï¿½ï¿½
 			
 			Arrays.sort(lengths);
 			if(Math.pow(lengths[0], 2) + Math.pow(lengths[1], 2) == Math.pow(lengths[2], 2)) {

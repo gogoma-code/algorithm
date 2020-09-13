@@ -1,3 +1,7 @@
+/***
+ * 단어 공부 
+ * https://www.acmicpc.net/problem/1157
+ */
 package algorithmBaekjoon.level8;
 
 import java.io.BufferedReader;

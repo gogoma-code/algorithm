@@ -1,3 +1,7 @@
+/***
+ * 최소, 최대 
+ * https://www.acmicpc.net/problem/10818
+ */
 package algorithmBaekjoon.level6;
 
 import java.io.BufferedReader;

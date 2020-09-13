@@ -1,3 +1,7 @@
+/***
+ * 문자열 반복 
+ * https://www.acmicpc.net/problem/2675
+ */
 package algorithmBaekjoon.level8;
 
 import java.io.BufferedReader;

@@ -1,3 +1,7 @@
+/***
+ * 요세푸스 문제0
+ * https://www.acmicpc.net/problem/11866
+ */
 package algorithmBaekjoon.level21;
 
 import java.io.BufferedReader;

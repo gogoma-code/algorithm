@@ -1,3 +1,7 @@
+/***
+ * Fly me to the Alpha Centauri
+ * https://www.acmicpc.net/problem/1011
+ */
 package algorithmBaekjoon.level9;
 
 import java.io.BufferedReader;

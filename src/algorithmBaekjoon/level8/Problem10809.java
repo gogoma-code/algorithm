@@ -1,3 +1,7 @@
+/***
+ * 알파벳 찾기 
+ * https://www.acmicpc.net/problem/10809
+ */
 package algorithmBaekjoon.level8;
 
 import java.io.BufferedReader;

@@ -1,3 +1,7 @@
+/***
+ * 스택 수열 
+ * https://www.acmicpc.net/problem/1874
+ */
 package algorithmBaekjoon.level20;
 
 import java.io.BufferedReader;

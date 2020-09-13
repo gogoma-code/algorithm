@@ -1,3 +1,7 @@
+/***
+ * 별 찍기 - 13
+ * https://www.acmicpc.net/problem/2523
+ */
 package algorithmBaekjoon.level5;
 
 import java.io.BufferedReader;

@@ -1,3 +1,7 @@
+/***
+ * 두 수 비교하기 
+ * https://www.acmicpc.net/problem/1330
+ */
 package algorithmBaekjoon.level2;
 
 import java.io.BufferedReader;

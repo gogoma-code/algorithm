@@ -1,3 +1,7 @@
+/***
+ * 그룹 단어 체커 
+ * https://www.acmicpc.net/problem/1316
+ */
 package algorithmBaekjoon.level8;
 
 import java.io.BufferedReader;

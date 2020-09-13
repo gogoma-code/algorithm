@@ -1,3 +1,7 @@
+/***
+ * 곱셈 
+ * https://www.acmicpc.net/problem/2588
+ */
 package algorithmBaekjoon.level1;
 
 import java.io.BufferedReader;

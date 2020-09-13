@@ -1,3 +1,7 @@
+/***
+ * ACM 호텔 
+ * https://www.acmicpc.net/problem/10250
+ */
 package algorithmBaekjoon.level9;
 
 import java.io.BufferedReader;

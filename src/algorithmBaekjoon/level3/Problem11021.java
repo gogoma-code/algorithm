@@ -1,3 +1,7 @@
+/***
+ * A+B-7
+ * https://www.acmicpc.net/problem/11021
+ */
 package algorithmBaekjoon.level3;
 
 import java.io.BufferedReader;

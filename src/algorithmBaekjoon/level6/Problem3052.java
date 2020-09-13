@@ -1,10 +1,14 @@
+/***
+ * ë‚˜ë¨¸ì§€ 
+ * https://www.acmicpc.net/problem/3052
+ */
 package algorithmBaekjoon.level6;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Problem3052 { //³ª¸ÓÁö
+public class Problem3052 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		

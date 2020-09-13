@@ -1,3 +1,7 @@
+/***
+ * 소트인사이드 
+ * https://www.acmicpc.net/problem/1427
+ */
 package algorithmBaekjoon.level14;
 
 import java.io.BufferedReader;

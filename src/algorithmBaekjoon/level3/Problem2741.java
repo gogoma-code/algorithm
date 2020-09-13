@@ -1,3 +1,7 @@
+/***
+ * N 찍기 
+ * https://www.acmicpc.net/problem/2741
+ */
 package algorithmBaekjoon.level3;
 
 import java.io.BufferedReader;

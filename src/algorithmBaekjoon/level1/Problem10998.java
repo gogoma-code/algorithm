@@ -1,3 +1,7 @@
+/***
+ * AxB
+ * https://www.acmicpc.net/problem/10998
+ */
 package algorithmBaekjoon.level1;
 
 import java.io.BufferedReader;

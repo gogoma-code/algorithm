@@ -1,3 +1,7 @@
+/***
+ * 분수 찾기 
+ * https://www.acmicpc.net/problem/1193
+ */
 package algorithmBaekjoon.level9;
 
 import java.io.BufferedReader;

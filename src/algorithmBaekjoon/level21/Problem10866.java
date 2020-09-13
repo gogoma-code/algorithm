@@ -1,3 +1,7 @@
+/***
+ * 덱 
+ * https://www.acmicpc.net/problem/10866
+ */
 package algorithmBaekjoon.level21;
 
 import java.io.BufferedReader;

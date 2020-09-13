@@ -1,3 +1,7 @@
+/***
+ * 통계학 
+ * https://www.acmicpc.net/problem/2108
+ */
 package algorithmBaekjoon.level14;
 
 import java.io.BufferedReader;

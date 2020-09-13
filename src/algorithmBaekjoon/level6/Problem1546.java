@@ -1,3 +1,7 @@
+/***
+ * 평균 
+ * https://www.acmicpc.net/problem/1546
+ */
 package algorithmBaekjoon.level6;
 
 import java.io.BufferedReader;

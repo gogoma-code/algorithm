@@ -1,3 +1,7 @@
+/***
+ * We love kriii
+ * https://www.acmicpc.net/problem/10718
+ */
 package algorithmBaekjoon.level1;
 
 public class Problem10718 {

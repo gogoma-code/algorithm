@@ -1,3 +1,7 @@
+/***
+ * 프린터 큐 
+ * https://www.acmicpc.net/problem/1966
+ */
 package algorithmBaekjoon.level21;
 
 import java.io.BufferedReader;

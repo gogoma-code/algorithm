@@ -1,3 +1,7 @@
+/***
+ * 평균 점수 
+ * https://www.acmicpc.net/problem/10039
+ */
 package algorithmBaekjoon.level5;
 
 import java.io.BufferedReader;

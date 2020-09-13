@@ -1,3 +1,7 @@
+/***
+ * 소수 구하기 
+ * https://www.acmicpc.net/problem/1929
+ */
 package algorithmBaekjoon.level10;
 
 import java.io.BufferedReader;

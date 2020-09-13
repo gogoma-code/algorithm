@@ -1,10 +1,14 @@
+/***
+ * í•˜ë…¸ì´ íƒ‘ ì´ë™ ìˆœ
+ * https://www.acmicpc.net/problem/11729
+ */
 package algorithmBaekjoon.level11;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Problem11729 { //ÇÏ³ëÀÌ Å¾ ÀÌµ¿ ¼ø¼­
+public class Problem11729 { 
 	private static StringBuilder sb;
 	private static int count;
 	public static void main(String[] args) throws NumberFormatException, IOException {

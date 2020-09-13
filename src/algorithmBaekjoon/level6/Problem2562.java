@@ -1,3 +1,7 @@
+/***
+ * ìµœëŒ“ê°’ 
+ * https://www.acmicpc.net/problem/2562
+ */
 package algorithmBaekjoon.level6;
 
 import java.io.BufferedReader;
@@ -8,7 +12,7 @@ public class Problem2562 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int max = Integer.MIN_VALUE, maxIdx = 0; //ÃÖ´ñ°ªÀ» ±¸ÇÏ±â À§ÇÑ º¯¼ö
+		int max = Integer.MIN_VALUE, maxIdx = 0; //ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		for(int i=0; i<9; i++) {
 			int num = Integer.parseInt(br.readLine());
 			if(max < num) {

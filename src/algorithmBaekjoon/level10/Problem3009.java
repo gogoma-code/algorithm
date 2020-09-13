@@ -1,3 +1,7 @@
+/***
+ * ë„¤ ë²ˆì§¸ 
+ * https://www.acmicpc.net/problem/3009
+ */
 package algorithmBaekjoon.level10;
 
 import java.io.BufferedReader;
@@ -5,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Problem3009 { //³× ¹øÂ° Á¡
+public class Problem3009 { 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		

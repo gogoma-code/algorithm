@@ -1,3 +1,7 @@
+/***
+ * 벌집 
+ * https://www.acmicpc.net/problem/2292
+ */
 package algorithmBaekjoon.level9;
 
 import java.io.BufferedReader;

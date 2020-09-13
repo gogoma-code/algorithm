@@ -1,3 +1,7 @@
+/***
+ * 합 
+ * https://www.acmicpc.net/problem/8393
+ */
 package algorithmBaekjoon.level3;
 
 import java.io.BufferedReader;

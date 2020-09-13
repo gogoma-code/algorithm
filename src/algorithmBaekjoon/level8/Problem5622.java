@@ -1,3 +1,7 @@
+/***
+ * 다이얼 
+ * https://www.acmicpc.net/problem/5622
+ */
 package algorithmBaekjoon.level8;
 
 import java.io.BufferedReader;

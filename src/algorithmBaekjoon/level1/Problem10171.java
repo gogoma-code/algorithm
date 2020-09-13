@@ -1,3 +1,7 @@
+/***
+ * 고양이
+ * https://www.acmicpc.net/problem/10171
+ */
 package algorithmBaekjoon.level1;
 
 public class Problem10171 {

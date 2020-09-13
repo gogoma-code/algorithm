@@ -1,3 +1,7 @@
+/***
+ * 시험 성적 
+ * https://www.acmicpc.net/problem/9498
+ */
 package algorithmBaekjoon.level2;
 
 import java.io.BufferedReader;

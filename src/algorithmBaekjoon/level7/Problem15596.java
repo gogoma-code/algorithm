@@ -1,3 +1,7 @@
+/***
+ * 정수 N개의 합 
+ * https://www.acmicpc.net/problem/15596
+ */
 package algorithmBaekjoon.level7;
 
 public class Problem15596 {

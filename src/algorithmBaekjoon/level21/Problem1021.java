@@ -1,3 +1,7 @@
+/***
+ * 회전하는 큐 
+ * https://www.acmicpc.net/problem/1021
+ */
 package algorithmBaekjoon.level21;
 
 import java.io.BufferedReader;

@@ -1,3 +1,7 @@
+/***
+ * 더하기 사이클 
+ * https://www.acmicpc.net/problem/1110
+ */
 package algorithmBaekjoon.level4;
 
 import java.io.BufferedReader;

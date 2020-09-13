@@ -1,3 +1,7 @@
+/***
+ * 숫자의 개수 
+ * https://www.acmicpc.net/problem/2577
+ */
 package algorithmBaekjoon.level6;
 
 import java.io.BufferedReader;

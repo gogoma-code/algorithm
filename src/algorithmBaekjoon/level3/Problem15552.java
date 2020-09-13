@@ -1,3 +1,7 @@
+/***
+ * 빠른 A+B
+ * https://www.acmicpc.net/problem/15552
+ */
 package algorithmBaekjoon.level3;
 
 import java.io.BufferedReader;

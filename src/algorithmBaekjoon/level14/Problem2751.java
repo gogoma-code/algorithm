@@ -1,3 +1,7 @@
+/***
+ * 수 정렬하기2
+ * https://www.acmicpc.net/problem/2751
+ */
 package algorithmBaekjoon.level14;
 
 import java.io.BufferedReader;

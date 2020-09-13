@@ -1,3 +1,7 @@
+/***
+ * 셀프 넘버 
+ * https://www.acmicpc.net/problem/4673
+ */
 package algorithmBaekjoon.level7;
 
 public class Problem4673 {

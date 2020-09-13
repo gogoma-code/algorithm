@@ -1,3 +1,7 @@
+/***
+ * 개
+ * https://www.acmicpc.net/problem/10172
+ */
 package algorithmBaekjoon.level1;
 
 public class Problem10172 {

@@ -1,3 +1,7 @@
+/***
+ * A+B
+ * https://www.acmicpc.net/problem/1000
+ */
 package algorithmBaekjoon.level1;
 
 import java.util.Scanner;
