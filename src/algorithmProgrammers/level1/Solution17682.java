@@ -1,3 +1,7 @@
+/***
+ * [1차] 다트 게임 
+ * https://programmers.co.kr/learn/courses/30/lessons/17682?language=java
+ */
 package algorithmProgrammers.level1;
 
 public class Solution17682 {

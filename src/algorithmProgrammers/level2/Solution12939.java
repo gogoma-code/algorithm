@@ -1,3 +1,7 @@
+/**
+ * 최댓값과 최솟값 
+ * https://programmers.co.kr/learn/courses/30/lessons/12939?language=java
+ */
 package algorithmProgrammers.level2;
 
 import java.util.Arrays;

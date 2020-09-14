@@ -1,3 +1,7 @@
+/***
+ * 전화번호 목록 
+ * https://programmers.co.kr/learn/courses/30/lessons/42577?language=java
+ */
 package algorithmProgrammers.level2;
 
 public class Solution42577 {

@@ -1,3 +1,7 @@
+/***
+ * 약수의 합 
+ * https://programmers.co.kr/learn/courses/30/lessons/12928?language=java
+ */
 package algorithmProgrammers.level1;
 
 public class Solution12928 {

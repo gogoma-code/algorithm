@@ -1,3 +1,7 @@
+/**
+ * 숫자의 표현 
+ * https://programmers.co.kr/learn/courses/30/lessons/12924?language=java
+ */
 package algorithmProgrammers.level2;
 
 public class Solution12924 {

@@ -1,3 +1,7 @@
+/***
+ * 실패율 
+ * https://programmers.co.kr/learn/courses/30/lessons/42889?language=java
+ */
 package algorithmProgrammers.level1;
 
 import java.util.ArrayList;

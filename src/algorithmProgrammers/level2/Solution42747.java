@@ -1,6 +1,10 @@
+/**
+ * H-Index
+ * https://programmers.co.kr/learn/courses/30/lessons/42747?language=java
+ */
 package algorithmProgrammers.level2;
 /***
- * H-Index
+
  * https://programmers.co.kr/learn/courses/30/lessons/42747?language=java
  */
 import java.util.Arrays;

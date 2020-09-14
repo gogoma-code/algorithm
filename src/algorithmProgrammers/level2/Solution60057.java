@@ -1,3 +1,7 @@
+/***
+ * 문자열 압축 
+ * https://programmers.co.kr/learn/courses/30/lessons/60057?language=java
+ */
 package algorithmProgrammers.level2;
 
 public class Solution60057 {

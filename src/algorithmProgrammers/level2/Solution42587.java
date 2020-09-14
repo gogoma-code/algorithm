@@ -1,3 +1,7 @@
+/***
+ * 프린터 
+ * https://programmers.co.kr/learn/courses/30/lessons/42587?language=java
+ */
 package algorithmProgrammers.level2;
 
 import java.util.ArrayList;

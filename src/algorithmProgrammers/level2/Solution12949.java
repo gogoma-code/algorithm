@@ -1,3 +1,7 @@
+/**
+ * 행렬의 곱셈 
+ * https://programmers.co.kr/learn/courses/30/lessons/12949?language=java
+ */
 package algorithmProgrammers.level2;
 
 public class Solution12949 {

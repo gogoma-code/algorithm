@@ -1,3 +1,7 @@
+/***
+ * 자릿수 더하기 
+ * https://programmers.co.kr/learn/courses/30/lessons/12931?language=java
+ */
 package algorithmProgrammers.level1;
 
 public class Solution12931 {

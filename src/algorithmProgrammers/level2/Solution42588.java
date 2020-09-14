@@ -1,3 +1,7 @@
+/**
+ * 탑
+ * 문제 삭제됨 
+ */
 package algorithmProgrammers.level2;
 
 public class Solution42588 {

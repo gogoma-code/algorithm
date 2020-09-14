@@ -1,3 +1,7 @@
+/***
+ * 기능개발 
+ * https://programmers.co.kr/learn/courses/30/lessons/42586?language=java
+ */
 package algorithmProgrammers.level2;
 
 public class Solution42586 {

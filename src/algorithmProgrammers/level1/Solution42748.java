@@ -1,3 +1,7 @@
+/***
+ * K번째 수 
+ * https://programmers.co.kr/learn/courses/30/lessons/42748?language=java
+ */
 package algorithmProgrammers.level1;
 
 import java.util.Arrays;
