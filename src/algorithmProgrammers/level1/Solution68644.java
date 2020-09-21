@@ -2,7 +2,7 @@
  * 두 개 뽑아서 더하기
  * https://programmers.co.kr/learn/courses/30/lessons/68644?language=java
  */
-package algorithmProgrammers.level2;
+package algorithmProgrammers.level1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
