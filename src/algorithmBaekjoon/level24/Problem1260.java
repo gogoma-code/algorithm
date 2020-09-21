@@ -2,7 +2,7 @@
  * DFS와 BFS
  * https://www.acmicpc.net/problem/1260
  */
-package algorithmBaekjoon.level29;
+package algorithmBaekjoon.level24;
 
 import java.io.BufferedReader;
 import java.io.IOException;
