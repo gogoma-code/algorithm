@@ -8,13 +8,14 @@ import java.util.Stack;
 
 public class Solution60058 {
 	public String solution(String p) {
-		return conversion(p, "");
+		return conversion(p);
     }
 	
-	public String conversion(String w, String u) {
+	public String conversion(String w) {
 		if(w.equals("")) return "";
 		
 		String result = new String("");
+		String u = new String("");
 		int left = 0, right = 0;
 		
 		for(int i=0; i<w.length(); i++) {
@@ -26,11 +27,11 @@ public class Solution60058 {
 			if(left == right) {
 				String v = w.substring(i+1, w.length());
 				if(isCorrect(u)) {
-					result += u + conversion(v, "");
+					result += u + conversion(v);
 				} else {
 					u = u.substring(1, u.length()-1);
 					u = u.replaceAll("[(]", "#").replaceAll("[)]", "(").replaceAll("[#]", ")");
-					result += "(" + conversion(v, "") + ")" + u;
+					result += "(" + conversion(v) + ")" + u;
 				}
 				break;
 			}
