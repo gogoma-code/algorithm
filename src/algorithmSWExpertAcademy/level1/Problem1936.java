@@ -1,3 +1,7 @@
+/**
+ * 1936. 1대1 가위바위보
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PjKXKALcDFAUq&categoryId=AV5PjKXKALcDFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level1;
 
 import java.io.BufferedReader;

@@ -1,3 +1,7 @@
+/**
+ * 2068. 최대수 구하기
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5QQhbqA4QDFAUq&categoryId=AV5QQhbqA4QDFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level1;
 
 import java.io.BufferedReader;

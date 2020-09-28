@@ -1,3 +1,7 @@
+/**
+ * 2025. N줄덧셈
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5QFZtaAscDFAUq&categoryId=AV5QFZtaAscDFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level1;
 
 import java.io.BufferedReader;

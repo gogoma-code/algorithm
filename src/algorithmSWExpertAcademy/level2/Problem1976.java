@@ -1,3 +1,7 @@
+/**
+ * 1976. 시각 덧셈
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PttaaAZIDFAUq&categoryId=AV5PttaaAZIDFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level2;
 
 import java.io.BufferedReader;

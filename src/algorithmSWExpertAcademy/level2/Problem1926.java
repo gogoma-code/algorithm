@@ -1,3 +1,7 @@
+/**
+ * 1926. 간단한 369게임
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PTeo6AHUDFAUq&categoryId=AV5PTeo6AHUDFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level2;
 
 import java.io.BufferedReader;

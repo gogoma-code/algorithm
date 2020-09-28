@@ -1,3 +1,7 @@
+/**
+ * 1933. 간단한 N의 약수
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PhcWaAKIDFAUq&categoryId=AV5PhcWaAKIDFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level1;
 
 import java.io.BufferedReader;

@@ -1,3 +1,7 @@
+/**
+ * 2046. 스탬프 찍기
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5QKdT6AyYDFAUq&categoryId=AV5QKdT6AyYDFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level1;
 
 import java.io.BufferedReader;

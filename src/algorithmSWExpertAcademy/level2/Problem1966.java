@@ -1,3 +1,7 @@
+/**
+ * 1966. 숫자를 정렬하자
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PrmyKAWEDFAUq&categoryId=AV5PrmyKAWEDFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level2;
 
 import java.io.BufferedReader;

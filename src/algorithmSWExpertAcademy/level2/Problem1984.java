@@ -1,3 +1,7 @@
+/**
+ * 1984. 중간 평균값 구하기
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5Pw_-KAdcDFAUq&categoryId=AV5Pw_-KAdcDFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level2;
 
 import java.io.BufferedReader;

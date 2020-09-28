@@ -1,3 +1,7 @@
+/**
+ * 2070. 큰 놈, 작은 놈, 같은 놈
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5QQ6qqA40DFAUq&categoryId=AV5QQ6qqA40DFAUq&categoryType=CODE
+ */
 package algorithmSWExpertAcademy.level1;
 
 import java.io.BufferedReader;
