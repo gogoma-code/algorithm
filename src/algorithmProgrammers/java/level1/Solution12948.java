@@ -6,10 +6,21 @@ package algorithmProgrammers.java.level1;
 
 public class Solution12948 {
 	public String solution(String phone_number) {
-		String answer = new String("");
-		for (int i = 0; i < phone_number.length(); i++)
-			answer += phone_number.length() - i <= 4 ? phone_number.charAt(i) : "*";
+		StringBuilder sb = new StringBuilder(phone_number);
+		for (int i = 0; i < phone_number.length()-4; i++) {
+			sb.setCharAt(i, '*');
+		}
 
-		return answer;
+		return sb.toString();
+	}
+	
+	// 정규식 전방탐색
+	public String solution3(String phone_number) {
+		return phone_number.replaceAll(".(?=.{4})", "*");
+	}
+	
+	public static void main(String[] args) {
+		Solution12948 sol = new Solution12948();
+		System.out.println(sol.solution("0103344244"));
 	}
 }
