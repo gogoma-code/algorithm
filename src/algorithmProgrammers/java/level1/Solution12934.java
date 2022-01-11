@@ -10,4 +10,22 @@ public class Solution12934 {
 			return (long) Math.pow(Math.sqrt(n) + 1, 2);
 		return -1;
 	}
+	
+	public long solution2(long n) {
+		long count = 30;
+		double x = 1.0;
+		while(0 < count--) {
+			//System.out.print("(" + x + " + " + "(" + n + " / " + x + ")) / " + 2 + " = ");
+			x = (x + (n / x)) / 2;
+			//System.out.println(x);
+		}
+		
+		return (x % 1 == 0.0) ? (long) ((x+1) * (x+1)) : -1;
+	}
+	
+	public static void main(String[] args) {
+		Solution12934 sol = new Solution12934();
+		//System.out.println(sol.solution(4));
+		System.out.println(sol.solution2(121));
+	}
 }
