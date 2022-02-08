@@ -4,19 +4,24 @@
  */
 package algorithmProgrammers.java.level1;
 
-public class Solution12943 {
+public class Solution12943 {	
 	public int solution(int num) {
-		int cnt = 0;
-		while (cnt++ < 450) {
-			if (num == 1)
-				return cnt - 1;
-
-			if (num % 2 == 0)
-				num /= 2;
-			else
-				num = (num * 3) + 1;
+		long numL = num;
+		for(int cnt=0; cnt<500; cnt++) {
+			if(numL == 1) return cnt;
+			
+			numL = (numL%2 == 0) ? numL/2 : numL*3+1;
 		}
-
+		
 		return -1;
+	}
+	
+	public static void main(String[] args) {
+		Solution12943 sol = new Solution12943();
+		
+		long start = System.currentTimeMillis();
+		System.out.println(sol.solution(626331));
+		long end = System.currentTimeMillis();
+		System.out.println("수행시간: " + (end - start) + " ms");
 	}
 }
