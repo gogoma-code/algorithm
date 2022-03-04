@@ -4,19 +4,24 @@
  */
 package algorithmProgrammers.java.level1;
 
-public class Solution12930 {
+public class Solution12930 {	
 	public String solution(String s) {
-		boolean checkEvenOdd = true;
 		StringBuilder sb = new StringBuilder();
-		for(int i=0; i<s.length(); i++) {
-			char ch = s.charAt(i);
-			if(checkEvenOdd) sb.append(String.valueOf(ch).toUpperCase());
-			else sb.append(String.valueOf(ch).toLowerCase());
-			
-			checkEvenOdd = !checkEvenOdd;
-			if(ch == ' ') checkEvenOdd = true;
+		boolean evenFlag = true;
+		for (char ch : s.toCharArray()) {
+			sb.append(evenFlag ? Character.toUpperCase(ch) : Character.toLowerCase(ch));
+			evenFlag = (ch == ' ') ? true : !evenFlag;
 		}
 		
 		return sb.toString();
 	}
+	
+	public static void main(String[] args) {
+		Solution12930 sol = new Solution12930();
+		long start = System.currentTimeMillis();
+		sol.solution("try hello world");
+		long end = System.currentTimeMillis();
+		System.out.println("1번 풀이 수행시간: " + (end - start) + " ms");
+	}
 }
+
