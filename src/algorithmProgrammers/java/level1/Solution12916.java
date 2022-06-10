@@ -14,4 +14,29 @@ public class Solution12916 {
 		
 		return total == 0 ? true : false;
 	}
+	
+	boolean solution2(String s) {
+		int total = 0;
+		for(char ch : s.toLowerCase().toCharArray()) {
+			switch(ch) { 
+				case 'p': total++; break;
+				case 'y': total--; break;
+			}
+		}
+		return total == 0;
+	}
+	
+	boolean solution3(String s) {
+		return s.replaceAll("[^yY]", "").length() - s.replaceAll("[^pP]", "").length() == 0;
+	}
+	
+	boolean solution4(String s) {
+		return s.chars().filter(ch -> ch == 'p' || ch == 'P').count() == s.chars().filter(ch -> ch == 'y' || ch == 'Y').count();
+	}
+	
+	public static void main(String[] args) {
+		Solution12916 sol = new Solution12916();
+		System.out.println(sol.solution4("pyasdp"));
+		System.out.println(sol.solution4("pyasyp"));
+	}
 }
