@@ -18,4 +18,20 @@ public class Solution12912 {
 		} else
 			return a;
 	}
+	
+	public long solution2(int a, int b) {
+		long sum = 0;
+		for(int i=Math.min(a, b); i<=Math.max(a, b); i++) {
+			sum += i;
+		}
+		return sum;
+	}
+	
+	public long solution3(int a, int b) {
+		return sequenceSum(Math.min(a, b), Math.max(a, b));
+	}
+	
+	public long sequenceSum(long min, long max) {
+		return (max - min + 1) * (min + max) / 2;
+	}
 }
