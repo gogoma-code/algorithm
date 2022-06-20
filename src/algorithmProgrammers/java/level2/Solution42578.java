@@ -28,6 +28,7 @@ public class Solution42578 {
 		Solution42578 sol = new Solution42578();
 		String[][] clothes = {{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban", "headgear"}, {"test1", "head"}, {"test2", "head"}};
 		String[][] clothes2 = {{"yellow_hat", "headgear"}, {"blue_sunglasses", "headgear"}, {"green_turban", "headgear"}};
+		System.out.println(sol.solution(clothes));
 		System.out.println(sol.solution(clothes2));
 	}
 }
