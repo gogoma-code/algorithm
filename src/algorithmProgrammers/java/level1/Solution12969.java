@@ -12,6 +12,7 @@ public class Solution12969 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        sc.close();
 
         StringBuilder sb = new StringBuilder();
         IntStream.range(0, a).forEach(i -> sb.append("*"));
