@@ -20,4 +20,17 @@ public class Solution12926 {
 		}
 		return sb.toString();
 	}
+	
+	public String solution2(String s, int n) {
+		StringBuilder sb = new StringBuilder();
+		for(char ch : s.toCharArray()) {
+			if(ch != ' ') {
+				char a = Character.isLowerCase(ch) ? 'a' : 'A';
+				ch = (char) ((ch - a + n) % 26 + a);
+			}
+			sb.append(ch);
+		}
+		
+		return sb.toString();
+	}
 }
