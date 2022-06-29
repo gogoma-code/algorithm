@@ -17,7 +17,9 @@ public class Solution12917 {
 	}
 	
 	public String solution2(String s) {
-		return Stream.of(s.split("")).sorted(Collections.reverseOrder()).collect(Collectors.joining());
+		return Stream.of(s.split(""))
+				.sorted(Collections.reverseOrder())
+				.collect(Collectors.joining());
 	}
 	
 	public String solution3(String s) {
