@@ -5,11 +5,34 @@
 package algorithmProgrammers.java.level1;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Solution12917 {
 	public String solution(String s) {
 		char[] array = s.toCharArray();
 		Arrays.sort(array);
 		return new StringBuilder(new String(array)).reverse().toString();
+	}
+	
+	public String solution2(String s) {
+		return Stream.of(s.split("")).sorted(Collections.reverseOrder()).collect(Collectors.joining());
+	}
+	
+	public String solution3(String s) {
+		char[] s_arr = s.toCharArray();
+		for(int i=0; i<s_arr.length; i++) {
+			int max = i;
+			for(int j=i+1; j<s_arr.length; j++) {
+				if(s_arr[max] < s_arr[j]) max = j;
+			}
+			
+			char tmp = s_arr[max];
+			s_arr[max] = s_arr[i];
+			s_arr[i] = tmp;
+		}
+		
+		return new String(s_arr);
 	}
 }
