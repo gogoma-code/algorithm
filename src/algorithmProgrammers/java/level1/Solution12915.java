@@ -75,24 +75,4 @@ public class Solution12915 {
 		
 		return strings;
 	}
-
-	public static void main(String[] args) {
-		Solution12915 sol = new Solution12915();
-//		String[] inputs = { "sun", "bed", "car" };
-		String[] inputs = {"abce", "abcd", "abce"};
-		String[] outputs = sol.solution3(inputs, 1);
-
-		for (String s : outputs) {
-			System.out.println(s);
-		}
-		
-		String[] ary = {"a", "b", "c", "d", "e"};
-		Arrays.sort(ary, (s1, s2) -> {
-			return -1;
-		});
-		for (String s : ary) {
-			System.out.println(s);
-		}
-		
-	}
 }
