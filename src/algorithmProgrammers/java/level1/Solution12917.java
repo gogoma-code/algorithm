@@ -24,7 +24,7 @@ public class Solution12917 {
 	
 	public String solution3(String s) {
 		char[] s_arr = s.toCharArray();
-		for(int i=0; i<s_arr.length; i++) {
+		for(int i=0; i<s_arr.length-1; i++) {
 			int max = i;
 			for(int j=i+1; j<s_arr.length; j++) {
 				if(s_arr[max] < s_arr[j]) max = j;

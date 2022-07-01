@@ -29,22 +29,70 @@ public class Solution12915 {
 		// Collections.reverse(list); // 주석시 오름차순
 		return list;
 	}
-	
+
 	public String[] solution(String[] strings, int n) {
 		Arrays.sort(strings);
 		String[] newStrings = new String[strings.length];
-		
+
 		Map<Integer, Character> map = new HashMap<Integer, Character>();
-		for(int i=0; i<strings.length; i++) {
+		for (int i = 0; i < strings.length; i++) {
 			map.put(i, strings[i].charAt(n));
 		}
 		Iterator<Integer> it = sortByValue(map).iterator();
-		
-		for(int i=0; it.hasNext(); i++) {
+
+		for (int i = 0; it.hasNext(); i++) {
 			newStrings[i] = strings[it.next()];
 		}
-		
-		
+
 		return newStrings;
+	}
+
+	public String[] solution2(String[] strings, int n) {
+		String[] answer = strings;
+
+		for (int i = 0; i < answer.length - 1; i++) {
+			for (int j = i + 1; j < answer.length; j++) {
+				if (answer[i].charAt(n) > answer[j].charAt(n)) {
+					String tmp = answer[j];
+					answer[j] = answer[i];
+					answer[i] = tmp;
+				} else if (answer[i].charAt(n) == answer[j].charAt(n) && answer[i].compareTo(answer[j]) > 0) {
+					String tmp = answer[j];
+					answer[j] = answer[i];
+					answer[i] = tmp;
+				}
+			}
+		}
+
+		return answer;
+	}
+
+	public String[] solution3(String[] strings, int n) {
+		Arrays.sort(strings, (s1, s2) -> {
+			if (s1.charAt(n) == s2.charAt(n)) return s1.compareTo(s2);
+			else return s1.charAt(n) - s2.charAt(n);
+		});
+		
+		return strings;
+	}
+
+	public static void main(String[] args) {
+		Solution12915 sol = new Solution12915();
+//		String[] inputs = { "sun", "bed", "car" };
+		String[] inputs = {"abce", "abcd", "abce"};
+		String[] outputs = sol.solution3(inputs, 1);
+
+		for (String s : outputs) {
+			System.out.println(s);
+		}
+		
+		String[] ary = {"a", "b", "c", "d", "e"};
+		Arrays.sort(ary, (s1, s2) -> {
+			return -1;
+		});
+		for (String s : ary) {
+			System.out.println(s);
+		}
+		
 	}
 }
