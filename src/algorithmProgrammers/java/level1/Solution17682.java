@@ -4,53 +4,93 @@
  */
 package algorithmProgrammers.java.level1;
 
+import java.util.Stack;
+
 public class Solution17682 {
 	public int solution(String dartResult) {
-		int answer_arr[] = new int[3];
-		int idx = 0, intCnt = 0;
-		
-		for(int i=0; i<dartResult.length(); i++) {
-			char dartChar = dartResult.charAt(i);
-			int dartInt = Character.getNumericValue(dartChar); 
-			
-			if(dartInt >= 0 && dartInt <= 10) { // score
-				if(dartInt == 1) {
-					if(Character.getNumericValue(dartResult.charAt(i+1)) == 0) {
-						dartInt = 10;
-						i++;
-					}
+		int array[] = new int[3];
+		int idx = -1, count = 0;
+
+		for (int i = 0; i < dartResult.length(); i++) {
+			char dart = dartResult.charAt(i);
+			if (Character.isDigit(dart)) {
+				int dartInt = Character.getNumericValue(dart);
+				if (dartInt == 1 && dartResult.charAt(i + 1) == '0') {
+					dartInt = 10;
+					i++;
 				}
-				
-				answer_arr[idx] = dartInt;
-				intCnt++;
-			} else { // bonus & option
-				switch(dartChar) {
-				case 'S' : // Single
-					answer_arr[idx] = (int)Math.pow(answer_arr[idx], 1);
-					idx++;
+				array[1 + (idx++)] = dartInt;
+				count++;
+			} else {
+				int prev = array[idx];
+				switch (dart) {
+				case 'S':
 					break;
-				case 'D' : // Double
-					answer_arr[idx] = (int)Math.pow(answer_arr[idx], 2);
-					idx++;
+				case 'D':
+					prev = prev * prev;
 					break;
-				case 'T' : // Triple
-					answer_arr[idx] = (int)Math.pow(answer_arr[idx], 3);
-					idx++;
+				case 'T':
+					prev = prev * prev * prev;
 					break;
-				case '*' : // 스타상
-					idx = idx - 2 < 0 ? 0 : idx - 2;
-					while(idx < intCnt) {
-						answer_arr[idx] = answer_arr[idx] * 2; 
-						idx++;
+				case '*':
+					prev *= 2;
+					if (count > 1) {
+						array[idx - 1] *= 2;
 					}
 					break;
-				case '#' : // 아차상
-					answer_arr[idx-1] = answer_arr[idx-1] * (-1);
-					break;
+				case '#':
+					prev *= -1;
 				}
+				array[idx] = prev;
 			}
 		}
-		
-		return answer_arr[0] + answer_arr[1] + answer_arr[2];
+
+		int answer = 0;
+		for (int score : array)
+			answer += score;
+
+		return answer;
+	}
+
+	public int solution2(String dartResult) {
+		Stack<Integer> stack = new Stack<Integer>();
+
+		for (int i = 0; i < dartResult.length(); i++) {
+			char dart = dartResult.charAt(i);
+			if (Character.isDigit(dart)) {
+				int dartInt = Character.getNumericValue(dart);
+				if (dartInt == 1 && dartResult.charAt(i + 1) == '0') {
+					dartInt = 10;
+					i++;
+				}
+				stack.push(dartInt);
+			} else {
+				int prev = stack.pop();
+				switch (dart) {
+				case 'D':
+					prev = prev * prev;
+					break;
+				case 'T':
+					prev = prev * prev * prev;
+					break;
+				case '*':
+					prev *= 2;
+					if (!stack.isEmpty()) {
+						stack.push(stack.pop() * 2);
+					}
+					break;
+				case '#':
+					prev *= -1;
+					break;
+				}
+				stack.push(prev);
+			}
+		}
+
+		int answer = 0;
+		while (!stack.isEmpty())
+			answer += stack.pop();
+
+		return answer;
 	}
 }
