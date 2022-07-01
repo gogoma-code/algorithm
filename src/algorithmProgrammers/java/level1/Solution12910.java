@@ -5,22 +5,31 @@
 package algorithmProgrammers.java.level1;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class Solution12910 {
-  public int[] solution(int[] arr, int divisor) {
+	public int[] solution(int[] arr, int divisor) {
+		int[] answer = Arrays.stream(arr).filter(i -> i % divisor == 0).sorted().toArray();
+		return answer.length == 0 ? new int[] { -1 } : answer;
+	}
+
+	public int[] solution2(int[] arr, int divisor) {
 		List<Integer> list = new ArrayList<Integer>();
-		for(int i=0; i<arr.length; i++) {
-			if(arr[i] % divisor == 0) list.add(arr[i]);
+		for (int i : arr) {
+			if (i % divisor == 0) list.add(i);
 		}
-		
-		if(list.isEmpty()) return new int[] {-1}; 
-		
-		Collections.sort(list);
-		int[] newArr = new int[list.size()];
-		for(int i=0; i<list.size(); i++) newArr[i] = list.get(i);
-		
-		return newArr;
+		list.sort( (a, b) -> { return a - b; } );
+
+		int[] answer;
+		if (list.isEmpty()) {
+			answer = new int[] { -1 };
+		} else {
+			answer = new int[list.size()];
+			for (int i = 0; i < list.size(); i++) answer[i] = list.get(i);
+		}
+
+		return answer;
 	}
 }
