@@ -34,4 +34,29 @@ public class Solution17681 {
 		
 		return answer;
 	}
+	
+	public String[] solution2(int n, int[] arr1, int[] arr2) {
+		String[] answer = new String[n];
+		for(int i=0; i<n; i++) {
+			String orBinaryStr = Integer.toBinaryString(arr1[i] | arr2[i]);
+			while(orBinaryStr.length() < n) {
+				orBinaryStr = " "+orBinaryStr;
+			}
+			orBinaryStr = orBinaryStr.replaceAll("1", "#").replaceAll("0", " ");
+			answer[i] = orBinaryStr;
+		}
+        
+        return answer;
+    }
+	
+	public static void main(String[] args) {
+		Solution17681 sol = new Solution17681();
+		int n = 5;
+		int[] inputs1 = {9,20,28,18,11};
+		int[] inputs2 = {30,1,21,17,28};
+		String[] outputs = sol.solution2(n, inputs1, inputs2);
+		for(String s : outputs) {
+			System.out.println(s);
+		}
+	}
 }
