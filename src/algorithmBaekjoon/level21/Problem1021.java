@@ -17,7 +17,6 @@ public class Problem1021 {
 		int[] numArr = new int[numArr_str.length];
 
 		int n = Integer.parseInt(input.split(" ")[0]);
-		int m = Integer.parseInt(input.split(" ")[1]);
 		for (int i = 0; i < numArr_str.length; i++)
 			numArr[i] = Integer.parseInt(numArr_str[i]);
 

@@ -6,7 +6,6 @@ package algorithmProgrammers.java.level1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class Solution12910 {
