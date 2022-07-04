@@ -19,4 +19,17 @@ public class Solution12982 {
 		
 		return cnt;
 	}
+	
+	public int solution2(int[] d, int budget) {
+		Arrays.sort(d);
+		int count = 0;
+		for(int num : d) {
+			budget -= num;
+			if(budget < 0) break;
+			
+			count++;
+		}
+		
+		return count;
+	}
 }
