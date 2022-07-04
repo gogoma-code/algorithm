@@ -6,12 +6,13 @@ package algorithmProgrammers.java.level1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 class Solution68644 {
-	public int[] solutionV1(int[] numbers) {		
+	public int[] solution(int[] numbers) {		
 		List<Integer> list = new ArrayList<Integer>();
 		int sum = 0;
 		for(int i=0; i<numbers.length; i++) {
@@ -33,8 +34,8 @@ class Solution68644 {
         return answer;
     }
 	
-	public int[] solutionV2(int[] numbers) {
-		Set<Integer> set = new HashSet<Integer>();
+	public int[] solution2(int[] numbers) {
+		Set<Integer> set = new TreeSet<Integer>();
 		
 		for(int i=0; i<numbers.length; i++) {
 			for(int j=i+1; j<numbers.length; j++) {
@@ -45,10 +46,28 @@ class Solution68644 {
 		return set.stream().sorted().mapToInt(Integer::intValue).toArray();
     }
 	
+	public int[] solution3(int[] numbers) {
+		Set<Integer> set = new TreeSet<Integer>();
+		
+		for(int i=0; i<numbers.length; i++) {
+			for(int j=i+1; j<numbers.length; j++) {
+				set.add(numbers[i] + numbers[j]);
+			}
+		}
+		
+		int[] answer = new int[set.size()];
+		Iterator<Integer> iter = set.iterator();
+		int i = 0;
+		while(iter.hasNext()) {
+			answer[i++] = iter.next();
+		}
+		
+		return answer;
+    }
+	
+	
 	public static void main(String[] args) {
 		Solution68644 sol = new Solution68644();
-		sol.solutionV1(new int[] {2,1,3,4,1});
-		//sol.solutionV1(new int[] {5,0,2,7});
-		//sol.solutionV2(new int[] {5,0,2,7});
+		sol.solution2(new int[] {2,1,3,4,1});
 	}
 }
