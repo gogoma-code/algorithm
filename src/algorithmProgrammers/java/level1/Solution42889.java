@@ -7,7 +7,6 @@ package algorithmProgrammers.java.level1;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.stream.IntStream;
 
 public class Solution42889 {
 	public int[] solution(int N, int[] stages) {
