@@ -15,11 +15,4 @@ class Solution86491 {
         
         return maxX * maxY;
     }
-
-    public static void main(String[] args) {
-        Solution86491 sol = new Solution86491();
-        System.out.println(
-            sol.solution(new int[][] {{60, 50}, {30, 70}, {60, 30}, {80, 40}})
-        );
-    }
 }

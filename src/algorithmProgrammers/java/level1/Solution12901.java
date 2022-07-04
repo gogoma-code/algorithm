@@ -45,4 +45,17 @@ public class Solution12901 {
 		
 		return answer;
 	}
+	
+	public String solution2(int a, int b) {
+		String[] days = { "THU", "FRI", "SAT", "SUN", "MON", "TUE", "WED" };
+		int[] numberOfDays = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		
+		int numberOfDaysSum = 0;
+		for(int i=0; i<a-1; i++) {
+			numberOfDaysSum += numberOfDays[i];
+		}
+		numberOfDaysSum += b;
+		
+		return days[numberOfDaysSum % 7];
+	}
 }
