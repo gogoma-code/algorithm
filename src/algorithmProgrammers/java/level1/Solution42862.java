@@ -43,4 +43,28 @@ public class Solution42862 {
 
 		return okMember;
 	}
+	
+	public int solution2(int n, int[] lost, int[] reserve) {
+		int[] haves = new int[n+2]; // 0번째 인덱스와, 마지막 인덱스는 비워두는 용도
+		int answer = n;
+		
+		for(int l : lost) haves[l]--;
+		for(int r : reserve) haves[r]++;
+		
+		for(int i=1; i<=n; i++) {
+			if(haves[i] == -1) {
+				if(haves[i-1] > 0) {
+					haves[i]++;
+					haves[i-1]--;
+				} else if(haves[i+1] > 0) {
+					haves[i]++;
+					haves[i+1]--;
+				} else {
+					answer--;
+				}
+			}
+		}
+		
+		return answer;
+	}
 }
