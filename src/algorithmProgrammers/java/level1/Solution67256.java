@@ -55,11 +55,59 @@ public class Solution67256 {
 		
 		return sb.toString();
 	}
-
-	public static void main(String[] args) {
-		Solution67256 sol = new Solution67256();
-		int numbers[] = {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
-		String hand = "right";
-		System.out.println(sol.solution(numbers, hand));
+	
+	public String solution3(int[] numbers, String hand) {
+		StringBuilder sb = new StringBuilder();
+		hand = hand.equals("left") ? "L" : "R";
+		
+		// 0 ... 9 행 번호
+		int[] rowKey = { 3, 0, 0, 0, 1, 1, 1, 2, 2, 2 }; 
+		
+		Thumb thumb_l = new Thumb("L", 3); // 왼손
+		Thumb thumb_r = new Thumb("R", 3); // 오른손
+		
+		for (int number : numbers) {
+			int row = rowKey[number]; // 행 번호
+			String[] pressWithThumb = new String[2]; // [0]=누르는 엄지, [1]=키의 위치
+			
+			switch(number) {
+			case 1: case 4: case 7:
+				pressWithThumb[0] = "L"; pressWithThumb[1] = "L";
+				break;
+			case 3: case 6: case 9:
+				pressWithThumb[0] = "R"; pressWithThumb[1] = "R";
+				break;
+			default:
+				int dist = thumb_l.getMidDist(row) - thumb_r.getMidDist(row); // 거리 계산
+				pressWithThumb[0] = (dist == 0) ? hand : ( (dist < 0) ? "L" : "R" ); 
+				pressWithThumb[1] = "M";
+				break;
+			}
+			
+			sb.append(pressWithThumb[0]);
+			if(pressWithThumb[0].equals("L")) thumb_l.setThumb(pressWithThumb[1], row);
+			else thumb_r.setThumb(pressWithThumb[1], row);
+		}
+		
+		return sb.toString();
+	}
+	
+	public class Thumb {
+		String position; // 엄지의 위치
+		int row;
+		
+		public Thumb(String position, int row) {
+			this.position = position;
+			this.row = row;
+		}
+		
+		private void setThumb(String position, int row) {
+			this.position = position;
+			this.row = row;
+		}
+		
+		private int getMidDist(int mid) {
+			return Math.abs(mid - this.row) - (this.position.equals("M") ? 1 : 0);
+		}
 	}
 }
