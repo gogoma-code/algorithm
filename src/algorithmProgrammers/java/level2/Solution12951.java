@@ -4,28 +4,26 @@
  */
 package algorithmProgrammers.java.level2;
 
+import java.util.regex.Pattern;
+
 public class Solution12951 {
-	public String solution(String s) {
-		String[] split = s.split(" ");
-		String answer = "";
-		for(int i=0; i<split.length; i++) {
-			String str = split[i].toLowerCase();
-			if(!str.equals("")) {
-				str = String.valueOf(str.charAt(0)).toUpperCase() + str.substring(1);
-			}
-			answer += str + " ";
+	public String solution(String s) {		
+		StringBuilder sb = new StringBuilder();
+		boolean flag = true;
+		for(char ch : s.toCharArray()) {			
+			sb.append(flag ? Character.toUpperCase(ch) : Character.toLowerCase(ch));
+			flag = (ch == ' ') ? true : false;
 		}
 		
-		if(s.charAt(s.length()-1) != ' ') {
-			answer = answer.trim();
-		}
-		
-        return answer;
+        return sb.toString();
     }
 	
-	public static void main(String[] args) {
-		Solution12951 sol = new Solution12951();
-		sol.solution("3people unFollowed me");
-		sol.solution("for the  last week");
+	public String solution2(String s) {
+		s = s.toLowerCase();
+		s = Pattern.compile("(((^)|(?<= ))[a-z]{1})")
+		        .matcher(s)
+		        .replaceAll(matche -> matche.group().toUpperCase());
+		
+		return s;
 	}
 }
