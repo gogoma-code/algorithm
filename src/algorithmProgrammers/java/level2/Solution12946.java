@@ -11,25 +11,26 @@ public class Solution12946 {
 		int count = (int)Math.pow(2, n) - 1;
 		int[][] answer = new int [count][2];
 		int index = 0;
-		Stack<Integer> hanoi = new Stack<>();
+		Stack<int[]> hanoi = new Stack<>();
 		
 		boolean flag = true;
-		int from = 1, by = 2, to = 3;		
-		hanoi.add(n); hanoi.add(from); hanoi.add(by); hanoi.add(to);
+		int from = 1, by = 2, to = 3;
+		hanoi.add(new int[] { n, from, by, to });
 		
 		while(!hanoi.isEmpty()) {
-			to = hanoi.pop(); by = hanoi.pop(); from = hanoi.pop(); n = hanoi.pop();
+			int[] pop = hanoi.pop();
+			n = pop[0]; from = pop[1]; by = pop[2]; to = pop[3];
 			
 			if( n == 1 ) {
 				answer[index++] = new int[] { from, to };
 				flag = false;
 			} else {
 				if(flag) {
-					hanoi.add(n); hanoi.add(from); hanoi.add(by); hanoi.add(to);
-					hanoi.add(n-1); hanoi.add(from); hanoi.add(to); hanoi.add(by);
+					hanoi.add(new int[] { n, from, by, to });
+					hanoi.add(new int[] { n-1, from, to, by });
 				}  else {
 					answer[index++] = new int[] { from, to };
-					hanoi.add(n-1); hanoi.add(by); hanoi.add(from); hanoi.add(to);
+					hanoi.add(new int[] { n-1, by, from, to });
 					flag = true;
 				}
 			}
@@ -57,7 +58,7 @@ class Hanoi {
 		this.hanoiAry = hanoiAry;
 	}
 	
-	public void hanoi(int n, int from, int by, int to) {
+	public void hanoi(int n, int from, int by, int to) {		
 		if(n==1) {
 			hanoiAry[index++] = new int[] { from, to };
 		} else {
