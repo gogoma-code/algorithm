@@ -6,7 +6,7 @@ package algorithmProgrammers.java.level2;
 
 import java.util.Arrays;
 
-public class N_Queen {
+public class Solution12952 {
 	public int solution(int n) {		
 		int answer = 0;
 		
@@ -43,7 +43,7 @@ public class N_Queen {
 	}
 	
 	public static void main(String[] args) {
-		N_Queen sol = new N_Queen();
+		Solution12952 sol = new Solution12952();
 		sol.solution(4);
 	}
 }
