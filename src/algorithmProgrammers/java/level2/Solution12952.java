@@ -11,7 +11,7 @@ public class Solution12952 {
 		int answer = 0;
 		
 		for(int first=0; first<n; first++) {
-			int[] board = new int[n]; // 행은 인덱스, 열은 값
+			int[] board = new int[n]; 
 			Arrays.fill(board, -1);
 			
 			board[0] = first; 
