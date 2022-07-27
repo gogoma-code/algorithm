@@ -12,10 +12,6 @@ public class Solution92342 {
 		int[] ryan = new int[len];
 		getArcheryScore(n, info, ryan, 0);
 		
-		for(int mr : maxRyan) {
-			System.out.print(mr + " ");
-		}
-		
         return maxDiff > 0 ? maxRyan : new int[] { -1 };
     }
 	
