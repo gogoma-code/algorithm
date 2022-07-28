@@ -35,14 +35,4 @@ public class Solution12918 {
 			return false;
 		}
 	}
-
-	public static void main(String[] args) {
-		Solution12918 sol = new Solution12918();
-
-		sol.solution2("a234");
-		sol.solution2("1234");
-		sol.solution2("000a0");
-		sol.solution2("1");
-		sol.solution2("aaaa");
-	}
 }
