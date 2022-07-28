@@ -43,9 +43,4 @@ public class Solution12933 {
 		
 		return Long.parseLong(String.valueOf(sort));
 	}
-	
-	public static void main(String[] args) {
-		Solution12933 sol = new Solution12933();
-		System.out.println(sol.solution(118372));
-	}
 }

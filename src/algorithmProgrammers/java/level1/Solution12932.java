@@ -19,19 +19,4 @@ public class Solution12932 {
 	public int[] solution2(long n) {
 		return new StringBuilder(String.valueOf(n)).reverse().chars().map(ch -> ch - '0').toArray();
 	}
-	
-	public static void main(String[] args) {
-		Solution12932 sol = new Solution12932();
-		
-		long start = System.currentTimeMillis();
-		sol.solution(987654321);
-		long end = System.currentTimeMillis();
-		
-		long start2 = System.currentTimeMillis();
-		sol.solution2(987654321);
-		long end2 = System.currentTimeMillis();
-		
-		System.out.println("수행시간1: " + (end - start) + " ms");
-		System.out.println("수행시간2: " + (end2 - start2) + " ms");
-	}
 }

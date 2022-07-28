@@ -53,18 +53,4 @@ public class Solution12935 {
 		int min = IntStream.of(arr).min().getAsInt();
 		return IntStream.of(arr).filter(i -> i != min).toArray();
 	}
-	
-	public static void main(String[] args) {
-		Solution12935 sol = new Solution12935();
-		long beforeTime = System.currentTimeMillis(); //코드 실행 전에 시간 받아오기
-		int[] arr = sol.solution2(new int[] {4, 3, 2, 1});
-		long afterTime = System.currentTimeMillis(); // 코드 실행 후에 시간 받아오기
-//		int[] arr = sol.solution3(new int[] {10});
-		System.out.println("-------------");
-		for(int a : arr) {
-			System.out.print(a + ", ");
-		}
-		long secDiffTime = (afterTime - beforeTime)/1000; //두 시간에 차 계산
-		System.out.println("시간차이(m) : "+secDiffTime);
-	}
 }

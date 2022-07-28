@@ -13,9 +13,4 @@ class Solution82612 {
     public long solution2(int price, int money, int count) {
         return Math.max(((long) price * count * (count+1) / 2) - money, 0 );
     }
-
-    public static void main(String[] args) {
-        Solution82612 sol = new Solution82612();
-        sol.solution(3, 20, 4);
-    }
 }

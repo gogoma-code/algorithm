@@ -23,20 +23,4 @@ public class Solution12925 {
 	public int solution2(String s) {
 		return Integer.parseInt(s);
 	}
-	
-	public static void main(String[] args) {
-		Solution12925 sol = new Solution12925();
-		String str = "-195670914";
-		
-		long start = System.currentTimeMillis();
-		sol.solution(str);
-		long end = System.currentTimeMillis();
-		
-		long start2 = System.currentTimeMillis();
-		sol.solution2(str);
-		long end2 = System.currentTimeMillis();
-		
-		System.out.println("1번 풀이 수행시간: " + (end - start) + " ms");
-		System.out.println("2번 풀이 수행시간: " + (end2 - start2) + " ms");
-	}
 }

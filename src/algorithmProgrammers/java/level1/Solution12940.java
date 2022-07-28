@@ -26,9 +26,4 @@ public class Solution12940 {
 	public int gcd(int a, int r) {
 		return (r == 0) ? a : gcd(r, a%r);
 	}
-	
-	public static void main(String[] args) {
-		Solution12940 sol = new Solution12940();
-		sol.solution2(32, 46);
-	}
 }

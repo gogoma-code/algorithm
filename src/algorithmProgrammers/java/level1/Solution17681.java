@@ -48,15 +48,4 @@ public class Solution17681 {
         
         return answer;
     }
-	
-	public static void main(String[] args) {
-		Solution17681 sol = new Solution17681();
-		int n = 5;
-		int[] inputs1 = {9,20,28,18,11};
-		int[] inputs2 = {30,1,21,17,28};
-		String[] outputs = sol.solution2(n, inputs1, inputs2);
-		for(String s : outputs) {
-			System.out.println(s);
-		}
-	}
 }

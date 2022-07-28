@@ -64,10 +64,4 @@ class Solution68644 {
 		
 		return answer;
     }
-	
-	
-	public static void main(String[] args) {
-		Solution68644 sol = new Solution68644();
-		sol.solution2(new int[] {2,1,3,4,1});
-	}
 }

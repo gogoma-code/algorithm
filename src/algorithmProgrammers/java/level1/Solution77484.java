@@ -51,14 +51,4 @@ public class Solution77484 {
 		
         return new int[] { rank_high, rank_low };
     }
-	
-	public static void main(String[] args) {
-		Solution77484 sol = new Solution77484();
-		int[] lottos = { 44, 1, 0, 0, 31, 25 };
-		int[] win_nums = { 31, 10, 45, 1, 6, 19 };
-		int[] outputs = sol.solution(lottos, win_nums);
-		for(int out : outputs) {
-			System.out.println(out);
-		}
-	}
 }

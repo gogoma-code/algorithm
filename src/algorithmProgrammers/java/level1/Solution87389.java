@@ -21,11 +21,4 @@ public class Solution87389 {
 	public int solution2(int n) {
 		return IntStream.range(2, n).filter(i -> n % i == 1).min().getAsInt();
 	}
-	
-	public static void main(String[] args) {
-		Solution87389 sol =  new Solution87389();
-		
-		int n = 12;
-		System.out.println(sol.solution2(n));
-	}
 }

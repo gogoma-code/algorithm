@@ -15,13 +15,4 @@ public class Solution12930 {
 		
 		return sb.toString();
 	}
-	
-	public static void main(String[] args) {
-		Solution12930 sol = new Solution12930();
-		long start = System.currentTimeMillis();
-		sol.solution("try hello world");
-		long end = System.currentTimeMillis();
-		System.out.println("1번 풀이 수행시간: " + (end - start) + " ms");
-	}
 }
-

@@ -27,24 +27,4 @@ public class Solution12928 {
 		
 		return set.stream().mapToInt(Integer::intValue).sum();
 	}
-
-	public static void main(String[] args) {
-		Solution12928 sol = new Solution12928();
-		//System.out.println(sol.solution2(50));
-		
-		int val = 3000;
-		
-		long start = System.currentTimeMillis();
-		int ans1 = sol.solution(val);
-		long end = System.currentTimeMillis();
-		System.out.println("1번 풀이 수행시간: " + (end - start) + " ms");
-		
-		start = System.currentTimeMillis();
-		int ans2 = sol.solution2(val);
-		end = System.currentTimeMillis();
-		System.out.println("2번 풀이 수행시간: " + (end - start) + " ms");
-		
-		System.out.println("1번 정답: " + ans1);
-		System.out.println("2번 정답: " + ans2);
-	}
 }

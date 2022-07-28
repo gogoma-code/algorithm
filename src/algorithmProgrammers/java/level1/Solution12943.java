@@ -15,13 +15,4 @@ public class Solution12943 {
 		
 		return -1;
 	}
-	
-	public static void main(String[] args) {
-		Solution12943 sol = new Solution12943();
-		
-		long start = System.currentTimeMillis();
-		System.out.println(sol.solution(626331));
-		long end = System.currentTimeMillis();
-		System.out.println("수행시간: " + (end - start) + " ms");
-	}
 }
