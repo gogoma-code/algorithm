@@ -33,10 +33,4 @@ public class Solution12916 {
 	boolean solution4(String s) {
 		return s.chars().filter(ch -> ch == 'p' || ch == 'P').count() == s.chars().filter(ch -> ch == 'y' || ch == 'Y').count();
 	}
-	
-	public static void main(String[] args) {
-		Solution12916 sol = new Solution12916();
-		System.out.println(sol.solution4("pyasdp"));
-		System.out.println(sol.solution4("pyasyp"));
-	}
 }
