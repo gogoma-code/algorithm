@@ -27,16 +27,4 @@ class Solution92341 {
 
 		return answer;
 	}
-
-	public static void main(String[] args) {
-		Solution92341 sol = new Solution92341();
-		int[] fees = { 1, 461, 1, 10 };
-		String[] records = { "00:00 1234 IN" };
-
-		int[] result = sol.solution(fees, records);
-		System.out.println();
-		for (int r : result) {
-			System.out.println(r);
-		}
-	}
 }
