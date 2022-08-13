@@ -36,13 +36,4 @@ public class Solution12936 {
 			}
 		}
 	}
-	
-	public static void main(String[] args) {
-		Solution12936 sol = new Solution12936();
-		int[] out = sol.solution(4, 8);
-		
-		for(int o : out) {
-			System.out.print(o + " ");
-		}
-	}
 }

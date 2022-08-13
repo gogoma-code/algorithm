@@ -50,13 +50,4 @@ public class Solution12936_v3 {
 			}
 		}
 	}
-
-	public static void main(String[] args) {
-		Solution12936_v3 sol = new Solution12936_v3();
-		int[] out = sol.solution(4, 8);
-
-		for (int o : out) {
-			System.out.print(o + " ");
-		}
-	}
 }

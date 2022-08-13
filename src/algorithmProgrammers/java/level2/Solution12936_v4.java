@@ -18,19 +18,13 @@ public class Solution12936_v4 {
 		int idx = 0;
 		while(idx < n) {
 			f /= n - idx;
+			
+			System.out.println(f + "," + k);
 			answer[idx++] = list.remove((int) (k / f));
 			k %= f;
 		}
 		
+		System.out.println(1 % 2);
 		return answer;
-	}
-
-	public static void main(String[] args) {
-		Solution12936_v4 sol = new Solution12936_v4();
-		int[] out = sol.solution(4, 9);
-
-		for (int o : out) {
-			System.out.print(o + " ");
-		}
 	}
 }
