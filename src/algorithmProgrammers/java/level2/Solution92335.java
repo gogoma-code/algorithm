@@ -6,12 +6,7 @@ package algorithmProgrammers.java.level2;
 
 public class Solution92335 {
 	public int solution(int n, int k) {
-		StringBuilder sb = new StringBuilder();
-		while (n > 0) {
-			sb.insert(0, n % k);
-			n /= k;
-		}
-		String n_to_k = sb.toString();
+		String n_to_k = changeNotation(n, k);
 
 		int count = 0;
 		String[] splitZero = n_to_k.split("0");
@@ -48,6 +43,16 @@ public class Solution92335 {
 		
 		return count;
 	}
+	
+	public String changeNotation(int n, int k) {
+		StringBuilder sb = new StringBuilder();
+		while (n > 0) {
+			sb.insert(0, n % k);
+			n /= k;
+		}
+		
+		return sb.toString();
+	}
 
 	public boolean isPrime(long num) {
 		boolean isPrime = true;
@@ -58,15 +63,5 @@ public class Solution92335 {
 			}
 		}
 		return num <= 1 ? false : isPrime;
-	}
-
-	public static void main(String[] args) {
-		Solution92335 sol = new Solution92335();
-//		int[] i = { 437674, 3 };
-		int[] i = { 110011, 10 };
-//		int[] i = { 2, 3 };
-		
-		int out = sol.solution2(i[0], i[1]);
-		System.out.println(out);
 	}
 }
