@@ -4,7 +4,7 @@
  */
 package algorithmProgrammers.java.level2;
 
-public class Solution92335 {
+class Solution92335 {
 	public int solution(int n, int k) {
 		String n_to_k = changeNotation(n, k);
 
