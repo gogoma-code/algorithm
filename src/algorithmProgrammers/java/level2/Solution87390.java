@@ -4,8 +4,6 @@
  */
 package algorithmProgrammers.java.level2;
 
-import java.util.Arrays;
-
 public class Solution87390 {
 	public int[] solution(int n, long left, long right) {		
 		int startIndex = (int) (left % n);
