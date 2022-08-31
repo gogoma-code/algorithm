@@ -8,11 +8,11 @@ public class Solution87390 {
 	public int[] solution(int n, long left, long right) {		
 		int startIndex = (int) (left % n);
 		int len = (int) (right - left) + 1;
-		int[] arr = new int[len];
 		int standardValue = (int) (left / n) + 1;
 		
 		int i = 0;
 		int idx = startIndex, val = startIndex+1;
+		int[] arr = new int[len];
 		while(i < len) {
 			arr[i++] = Math.max(val, standardValue);
 			
@@ -25,7 +25,6 @@ public class Solution87390 {
 			}
 		}
 				
-		
         return arr;
     }
 }
